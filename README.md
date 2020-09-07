@@ -22,6 +22,7 @@ La autenticación en los servicios empleará JSON Web Tokens (JWT).
 Todos los servicios sobre colecciones deben permitir realizar búsquedas o filtrados, además de permitir la obtención de los resultados paginados y ordenados por el campo que decida el usuario.
 
 Servicios disponibles para todos los usuarios (sin autenticación):
+
 o Obtener un listado con todas las publicaciones
 o Obtener una publicación concreta
 o Obtener un listado con todos los redactores
@@ -29,7 +30,9 @@ o Obtener un redactor concreto
 o Registrarse como usuario lector del blog
 
 Servicios con restricción de rol (con autenticación): Cada rol debe tener acceso a los servicios de su rol y a los de todos los roles anteriores.
+
 o Lectores:
+
 ▪ Eliminar su propia cuenta de usuario
 ▪ Añadir un comentario a una publicación
 ▪ Eliminar sus comentarios
@@ -40,16 +43,19 @@ o Lectores:
 ▪ Modificar una de sus suscripciones
 
 o Moderadores:
+
 ▪ Eliminar comentarios de otros usuarios
 ▪ Suspender la cuenta de otros usuarios (suspender una cuenta implica que se bloquee el acceso a la plataforma, no que se elimine al usuario)
 
 o Redactores:
+
 ▪ Crear nuevas publicaciones
 ▪ Obtener sus publicaciones
 ▪ Editar sus publicaciones
 ▪ Eliminar sus publicaciones
 
 o Administradores:
+
 ▪ Cambiar el rol de otros usuarios
 ▪ Eliminar la cuenta de otros usuarios
 ▪ Eliminar publicaciones de otros usuarios
