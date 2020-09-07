@@ -1,3 +1,2 @@
-Para a realizaciÛn da parte gr·fica utilicei WebStorm
-Simplemente con lanzar primeiro o servidor, entrar e darlle a start deberÌa de
-abrirse unha ventana no navegador no porto 3000 e acceder directamente ao BLOG.
+Para a realizaci√≥n da parte gr√°fica se utiliz√≥ WebStorm. Simplemente con lanzar primero el servidor, entrar e darle a start deber√≠a de abrirse 
+una ventana en el navegador en el puerto 3000 y acceder directamente al BLOG.
