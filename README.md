@@ -5,28 +5,37 @@ En este proyecto se desarrolla un sistema de gestión de contenidos basado en un
 La aplicación permite interactuar con los diferentes servicios desarrollados y se encuentra totalmente desacoplada del backend. 
 
 El blog está formado por los siguientes componentes:
+
 - Usuarios: Son los creadores y consumidores de los contenidos y pueden tener los siguientes roles:
+
 o Usuarios no registrados
+
 o Lectores
+
 o Moderadores
+
 o Redactores
+
 o Administradores
 
 Además de los roles, los usuarios deben tener un nombre, un Nick, una fecha de registro, una contraseña y una cuenta de correo.
 
-- Publicaciones: Son los contenidos que crean y consumen los usuarios. Son creados por los usuarios redactores, y pueden ser leídos por cualquier usuario. 
-- Comentarios: Los usuarios registrados pueden hacer comentarios sobre una publicación de forma que se creen discusiones entre los usuarios que enriquezcan el contenido del sitio.
+- Publicaciones: Son los contenidos que crean y consumen los usuarios. Son creados por los usuarios redactores, y pueden ser leídos por cualquier usuario.
 
-La autenticación en los servicios empleará JSON Web Tokens (JWT). 
+- Comentarios: Los usuarios registrados pueden hacer comentarios sobre una publicación de forma que se creen discusiones entre los usuarios que enriquezcan el contenido del sitio.
 
 Todos los servicios sobre colecciones deben permitir realizar búsquedas o filtrados, además de permitir la obtención de los resultados paginados y ordenados por el campo que decida el usuario.
 
 Servicios disponibles para todos los usuarios (sin autenticación):
 
 o Obtener un listado con todas las publicaciones
+
 o Obtener una publicación concreta
+
 o Obtener un listado con todos los redactores
+
 o Obtener un redactor concreto
+
 o Registrarse como usuario lector del blog
 
 Servicios con restricción de rol (con autenticación): Cada rol debe tener acceso a los servicios de su rol y a los de todos los roles anteriores.
@@ -34,28 +43,41 @@ Servicios con restricción de rol (con autenticación): Cada rol debe tener acce
 o Lectores:
 
 ▪ Eliminar su propia cuenta de usuario
+
 ▪ Añadir un comentario a una publicación
+
 ▪ Eliminar sus comentarios
+
 ▪ Obtener todos sus comentarios
+
 ▪ Crear una suscripción a un tema o autor concreto
+
 ▪ Obtener todas sus suscripciones
+
 ▪ Eliminar una de sus suscripciones
+
 ▪ Modificar una de sus suscripciones
 
 o Moderadores:
 
 ▪ Eliminar comentarios de otros usuarios
+
 ▪ Suspender la cuenta de otros usuarios (suspender una cuenta implica que se bloquee el acceso a la plataforma, no que se elimine al usuario)
 
 o Redactores:
 
 ▪ Crear nuevas publicaciones
+
 ▪ Obtener sus publicaciones
+
 ▪ Editar sus publicaciones
+
 ▪ Eliminar sus publicaciones
 
 o Administradores:
 
 ▪ Cambiar el rol de otros usuarios
+
 ▪ Eliminar la cuenta de otros usuarios
+
 ▪ Eliminar publicaciones de otros usuarios
