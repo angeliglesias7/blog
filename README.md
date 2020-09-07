@@ -4,6 +4,8 @@ En este proyecto se desarrolla un sistema de gestión de contenidos basado en un
 
 La aplicación permite interactuar con los diferentes servicios desarrollados y se encuentra totalmente desacoplada del backend. 
 
+Además, se ha desarrollado parte del frontend utilizando la librería de Javascript React.
+
 ## Componentes
 
 El blog está formado por los siguientes componentes:
